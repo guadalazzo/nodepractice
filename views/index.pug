@@ -2,8 +2,11 @@ extends layout
 
 block content
     h1 #{title}
+
     ul
         each article, i in articles
             li= article.title
+            h2= article.author
+            p= article.body
 
 
