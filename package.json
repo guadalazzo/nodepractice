@@ -2,10 +2,18 @@
   "name": "thisisjustatestofnode",
   "version": "1.0.0",
   "description": "Trying to set up knowledge",
-  "main": "index.js",
+  "main": "App.js",
   "scripts": {
+    "start": "node App.js",
+    "dev": "nodemon App.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Lupe",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "mongoose": "^5.2.3",
+    "nodemon": "^1.17.5",
+    "pug": "^2.0.3"
+  }
 }
