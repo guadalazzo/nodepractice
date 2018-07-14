@@ -6,8 +6,7 @@ block content
     ul.list-group
         each article, i in articles
             li.list-group-item
-                h4= article.title
-                p= article.author
-                p= article.body
+                a(href="/article/"+article._id)= article.title
+
 
 

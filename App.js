@@ -44,7 +44,13 @@ app.get('/', (req,res)=>{
         }
     });
 });
-
+app.get('/article/:id',(req,res)=>{
+    Article.findById(req.params.id, (err, article)=>{
+        res.render('article',{
+            article:article
+        });
+    });
+});
 //Add route
 app.get('/articles/add', (req,res)=> {
     res.render('add_articles',{
