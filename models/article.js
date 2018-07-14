@@ -1,5 +1,5 @@
 let mongoose = require('mongoose');
-// Article Schema
+// Article Schema formate from article body
 let articleSchema = mongoose.Schema({
     title:{
         type: String,
